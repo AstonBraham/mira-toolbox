@@ -47,6 +47,8 @@ public class RPCToolActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         ButterKnife.setDebug(true);
 
+
+        setTitle("RPC Tool");
         mAdapter = new RPCAdapter(rpcDataList);
 
         // TODO : Somebody needs to write this part
