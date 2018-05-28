@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity {
 
        // setupMenuDrawer(savedInstanceState, toolbar);
         setMenu(savedInstanceState, toolbar);
+
+        // TODO : Manage permissions first
+        Helper.createMiraCompanionFolder();
     }
 
 

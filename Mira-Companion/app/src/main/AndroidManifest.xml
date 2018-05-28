@@ -37,7 +37,11 @@
         <activity android:name=".Activities.DebuggerActivity" />
         <activity android:name=".Activities.RemoteControllerActivity" />
         <activity android:name=".Activities.SettingsActivity" />
-        <activity android:name=".Activities.RPCToolActivity"></activity>
+        <activity android:name=".Activities.RPCToolActivity" />
+
+        <service
+            android:name=".CompanionIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
