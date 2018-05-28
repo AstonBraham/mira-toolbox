@@ -52,6 +52,8 @@ dependencies {
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
 
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    
     implementation "com.mikepenz:crossfader:1.5.2@aar"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'

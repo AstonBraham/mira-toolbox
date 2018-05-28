@@ -58,6 +58,7 @@ import org.mira.companion.Activities.RemoteControllerActivity;
 import org.mira.companion.Activities.SettingsActivity;
 import org.mira.companion.Fragments.DevicesFragment;
 import org.mira.companion.Fragments.DownloadsFragment;
+import org.mira.companion.Fragments.ExploitHostFragment;
 import org.mira.companion.Fragments.FileManager;
 import org.mira.companion.Fragments.HomeFragment;
 import org.mira.companion.Fragments.LogsFragment;
@@ -334,6 +335,7 @@ public class MainActivity extends AppCompatActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(R.string.action_menu_main).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1).withTypeface(tf),
                         new PrimaryDrawerItem().withName(R.string.action_menu_store).withIcon(GoogleMaterial.Icon.gmd_burst_mode).withIdentifier(2).withTypeface(tf) /*.withBadgeStyle(new BadgeStyle(Color.BLUE, Color.WHITE)).withIdentifier(2).withSelectable(false) */,
+                        new PrimaryDrawerItem().withName(R.string.action_menu_exploit_host).withIcon(FontAwesome.Icon.faw_server).withIdentifier(6).withTypeface(tf) /*.withBadgeStyle(new BadgeStyle(Color.BLUE, Color.WHITE)).withIdentifier(2).withSelectable(false) */,
                         new PrimaryDrawerItem().withName(R.string.action_menu_devices).withIcon(FontAwesome.Icon.faw_gamepad).withIdentifier(3).withTypeface(tf),
                         new PrimaryDrawerItem().withName(R.string.action_menu_downloads).withIcon(GoogleMaterial.Icon.gmd_cloud_download).withIdentifier(4).withTypeface(tf),
                         new PrimaryDrawerItem().withName(R.string.action_menu_fmanager).withIcon(GoogleMaterial.Icon.gmd_file_upload).withIdentifier(5).withTypeface(tf),
@@ -379,7 +381,11 @@ public class MainActivity extends AppCompatActivity {
                                 setCustomTitle("Mira Companion", "File Manager");
                                 changeFragment(new FileManager());
                             }
+                            else if (drawerItem.getIdentifier() == 6) {
 
+                                setCustomTitle("Mira Companion", "Exploit Host");
+                                changeFragment(new ExploitHostFragment());
+                            }
 
                         }
 
